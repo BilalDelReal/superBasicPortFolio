@@ -19,7 +19,7 @@ img{
 li{
     list-style: none;
 }
-h1{
+h1, h2{
     margin-bottom: 20px;
 }
 a{
@@ -95,6 +95,9 @@ picture img{
 .projects-list details summary:hover{
     color: aqua;
 }
+details{
+    margin-bottom: 10px;
+}
 
 /*  --- SKILLS --- */
 .skills-cont ul{
@@ -105,7 +108,65 @@ picture img{
     font-size: 4rem;
 }
 
+/*  --- CONTACT --- */
+.contact-cont{
+    display: flex;
+    justify-content: space-between;
+}
+.text-contact p{
+    margin-bottom: 20px;
+}
+.text-contact h1{
+    font-size: 2.6rem;
+}
+.text-contact ul li{
+    margin-bottom: 20px;
+}
+.text-contact ul li a:hover{
+    color: aqua;
+}
+.text-contact{
+    max-width: 400px;
+}
+.form-contact{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+input, textarea{
+    text-decoration: none;
+    background: #F7F7F7;
+}
+input::placeholder{
+    color: #B2B2B2;
 
+}
+input{
+    padding: 10px 10px;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: blue 1px solid;
+}
+textarea{
+    resize: none;
+    overflow: auto;
+    padding: 5px ;
+
+}
+
+.submit{
+    background: black;
+    color: white;
+    padding: 10px 100px;
+    margin-top: auto;
+}
+
+
+
+
+/*  --- FOOTER --- */
 
 footer{
     margin-top: auto;
