@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
   <link href="resources/style.css" rel="stylesheet">
-  <script src="resources/index.js" defer></script>
+  <script src="resources/contact.js" defer></script>
 </head>
 <body>
 <header>
@@ -39,11 +39,17 @@
       </div>
       <div class="form-contact">
         <label for="name">Full name</label>
-        <input type="text" name="name" id="name" placeholder="Fullname" required>
+        <div class="">
+          <input type="text" name="name" id="name" class="inputs hover" placeholder="Fullname" required>
+        </div>
         <label for="email">email</label>
-        <input type="email" name="email" id="email" placeholder="name@email.com" required>
+        <div class="">
+          <input type="email" name="email" id="email" class="inputs hover" placeholder="name@email.com" required>
+        </div>
         <label for="message">Message</label>
-        <textarea id="message" required rows="6" placeholder="Write your message here!"></textarea>
+        <div class="">
+          <textarea class="inputs hover" id="message" required rows="6" placeholder="Write your message here!"></textarea>
+        </div>
         <button type="submit" class="submit">Send message!</button>
       </div>
 

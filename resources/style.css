@@ -144,15 +144,31 @@ input::placeholder{
 }
 input{
     padding: 10px 10px;
+    outline: none;
 }
-input:focus, textarea:focus{
+
+.input::after{
+    margin-top: 5px;
+    font-size: 0.8rem;
+    content: 'Este campo es obligatorio';
+    display: block;
+    color:red
+}
+.inputs {
+    width: 100%;
+}
+.hover:focus{
     outline: none;
     border: blue 1px solid;
+}
+.red-border{
+    border: red 2px solid;
 }
 textarea{
     resize: none;
     overflow: auto;
     padding: 5px ;
+    outline: none;
 
 }
 
@@ -161,6 +177,20 @@ textarea{
     color: white;
     padding: 10px 100px;
     margin-top: auto;
+    transition: background 0.4s ease-in-out;
+}
+
+.submit:hover{
+    background: blue;
+    cursor: pointer;
+}
+.error{
+    display: none;
+    color: red;
+}
+
+span{
+   font-size: 0.8rem;
 }
 
 
