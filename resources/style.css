@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Electrolize", sans-serif;
+}
+body{
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+}
+img{
+    display: block;
+}
+li{
+    list-style: none;
+}
+a{
+   text-decoration: none;
+    color: black;
+}
+.list-of-projects :after{
+    content: 'lalalala';
+}
+summary{
+    list-style: none;
+}
+
+/*  --- HEADER --- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.logo, h1{
+    font-size: 1.5rem;
+}
+nav{
+    align-content: center;
+}
+.nav-list{
+    display: flex;
+    gap: 30px;
+    height: 20px;
+}
+
+.nav-list li a:hover{
+    color: aqua;
+    font-size: 1.5rem;
+}
+.nav-list li a{
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: font-size 0.5s ease-in;
+
+}
+/*  --- ABOUT ME --- */
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+picture img{
+    width: 330px;
+
+}
+.about-me-cont{
+    max-width: 530px;
+}
+
+.about-me-cont h1{
+    margin-bottom: 20px;
+}
+.about-me-cont p{
+    margin-bottom: 20px;
+}
