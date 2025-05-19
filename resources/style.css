@@ -8,14 +8,19 @@
 body{
     max-width: 900px;
     margin: 0 auto;
-    display: grid;
-    grid-template-rows: auto 1fr auto ;
+    display: flex;
+    min-height: 100dvh;
+    flex-direction: column;
+
 }
 img{
     display: block;
 }
 li{
     list-style: none;
+}
+h1{
+    margin-bottom: 20px;
 }
 a{
    text-decoration: none;
@@ -63,6 +68,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 40px 0;
+
 }
 picture img{
     width: 330px;
@@ -70,11 +76,30 @@ picture img{
 }
 .about-me-cont{
     max-width: 530px;
+    max-height: 500px
 }
 
-.about-me-cont h1{
-    margin-bottom: 20px;
-}
+
 .about-me-cont p{
     margin-bottom: 20px;
+}
+/*  --- PROJECTS --- */
+.projects{
+    margin: 20px 0;
+}
+.projects-list details{
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.projects-list details:hover{
+    color: aqua;
+}
+
+
+
+
+
+footer{
+    margin-top: auto;
 }
