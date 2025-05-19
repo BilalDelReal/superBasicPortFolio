@@ -87,19 +87,29 @@ picture img{
 .projects{
     margin: 20px 0;
 }
-.projects-list details{
+.projects-list details summary{
     margin-bottom: 10px;
     cursor: pointer;
     user-select: none;
 }
-.projects-list details:hover{
+.projects-list details summary:hover{
     color: aqua;
 }
 
-
+/*  --- SKILLS --- */
+.skills-cont ul{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-cont ul li i{
+    font-size: 4rem;
+}
 
 
 
 footer{
     margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
