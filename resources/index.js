@@ -9,6 +9,6 @@ function arrowToggle(event){
 }
 
 for (let i=0 ; i< projects.length ; i++){
-    projects[i].addEventListener('click', arrowToggle)
+    projects[i].children[0].addEventListener('click', arrowToggle)
 }
 
